@@ -1,6 +1,7 @@
 package hackervaillant.util;
 
 import java.io.Serializable;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -41,8 +42,16 @@ public class Person implements Serializable {
       if ((this.prenom == null) ? (other.prenom != null) : !this.prenom.equals(other.prenom)) {
          return false;
       }
-      if (this.dateNaissance != other.dateNaissance && (this.dateNaissance == null || !this.dateNaissance.equals(other.dateNaissance))) {
-         return false;
+
+
+
+      if (this.dateNaissance != other.dateNaissance && this.dateNaissance == null) {
+         Calendar c1 = Calendar.getInstance();
+         c1.setTime(this.dateNaissance);
+         Calendar c2 = Calendar.getInstance();
+         c2.setTime(other.dateNaissance);
+         if(c1.get(Calendar.YEAR) != c2.get(Calendar.YEAR) || c1.get(Calendar.MONTH) != c2.get(Calendar.MONTH) || c1.get(Calendar.DATE) != c2.get(Calendar.DATE))
+            return false;
       }
       return true;
    }

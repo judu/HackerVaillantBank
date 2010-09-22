@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package hackervaillant.util;
+package tp2hackervaillantgetbankid.net;
 
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;

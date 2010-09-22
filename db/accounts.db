@@ -1,0 +1,4 @@
+{"accounts":[{"number":"9876-7654-1234-9876","person":{"nom":"Durillon",
+        "prenom":"Benoit","dateNaissance":"10/12/1990"}},{"number":
+      "1234-5678-6789-1234","person":{"nom":"Durillon","prenom":"Julien",
+        "dateNaissance":"11/01/1989"}}]}

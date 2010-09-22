@@ -6,20 +6,11 @@
 package tp2hackervaillantgetbankid;
 
 import hackervaillant.util.Person;
-import java.io.DataOutputStream;
 import java.io.IOException;
-import java.io.ObjectInput;
-import java.io.ObjectInputStream;
-import java.io.OutputStream;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import tp2hackervaillantgetbankid.bank.Bank;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import hackervaillant.util.TCPServer;
-import hackervaillant.util.UDPServer;
+import tp2hackervaillantgetbankid.net.TCPServer;
+import tp2hackervaillantgetbankid.net.UDPServer;
 import java.util.Calendar;
 
 /**

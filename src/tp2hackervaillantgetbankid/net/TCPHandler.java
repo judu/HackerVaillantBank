@@ -2,15 +2,16 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package hackervaillant.util;
+package tp2hackervaillantgetbankid.net;
 
+import hackervaillant.util.Person;
+import tp2hackervaillantgetbankid.bank.BankDB;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.net.Socket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import tp2hackervaillantgetbankid.bank.Bank;
 
 /**
  *

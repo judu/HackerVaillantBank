@@ -2,9 +2,11 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package hackervaillant.util;
+package tp2hackervaillantgetbankid.net;
 
+import tp2hackervaillantgetbankid.bank.BankDB;
 import com.google.gson.GsonBuilder;
+import hackervaillant.util.Person;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.StringReader;
@@ -55,7 +57,8 @@ class UDPHandler extends Thread {
             //On peut ajouter à la base.
             Person person = gbuilder.create().fromJson(personJson, Person.class);
             if(person != null) {
-               BankDB.getInstance().add(person, cbn);
+               BankDB.getInstance().add(cbn, person);
+               BankDB.getInstance().persist();
             }
          }
 

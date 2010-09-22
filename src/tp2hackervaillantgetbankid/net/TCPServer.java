@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package hackervaillant.util;
+package tp2hackervaillantgetbankid.net;
 
 import java.io.IOException;
 import java.net.ServerSocket;
